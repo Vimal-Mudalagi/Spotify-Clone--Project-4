@@ -26,6 +26,10 @@
     font-weight: bold;
 }
 
+.colgrey {
+    color: #9d9d9d;
+}
+
 .heading {
     display: flex;
     gap: 15px;
@@ -36,15 +40,83 @@
     padding: 23px 14px;
     font-size: 13px;
 }
-.heading img{
+
+.heading img {
     width: 25px;
 }
-.footer{
+
+.library {
+    min-height: 70vh;
+    position: relative;
+}
+
+.footer {
     display: flex;
     font-size: 10px;
     color: grey;
     gap: 13px;
+    position: absolute;
+    bottom: 0;
 }
-.footer a{
+
+.footer a {
     color: grey;
+}
+
+.right {
+    margin: 16px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.playlists {
+    padding: 16px;
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 35px;
+}
+
+.cards {
+    width: 180px;
+    font-size: small;
+    border-radius: 10px;
+    background-color: #252525;
+    position: relative;
+}
+
+.cards>* {
+    padding-top: 6px;
+}
+
+.cards img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+.play{
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 168px;
+    right: 17px;
+    opacity: 0;
+    transition: all 1s ease-out;
 }
