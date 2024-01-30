@@ -65,6 +65,7 @@
 
 .right {
     margin: 16px 0;
+    position: relative;
 }
 
 .header {
@@ -86,6 +87,8 @@
     gap: 10px;
     flex-wrap: wrap;
     margin: 35px;
+    overflow-y: scroll;
+    max-height: 70vh;
 }
 
 .cards {
@@ -105,7 +108,8 @@
     object-fit: contain;
     border-radius: 6px;
 }
-.play{
+
+.play {
     width: 28px;
     height: 28px;
     background-color: #1fdf64;
@@ -119,4 +123,50 @@
     right: 17px;
     opacity: 0;
     transition: all 1s ease-out;
+}
+
+.buttons>* {
+    margin: 0 12px;
+}
+
+.signbtn {
+    background-color: #101010;
+    color: #a7a7a7;
+    border: none;
+    outline: none;
+    font-weight: 800;
+}
+
+.signbtn:hover {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.loginbtn {
+    background-color: white;
+    border-radius: 24px;
+    color: black;
+    font-weight: 800;
+    padding: 16px;
+    width: 107px;
+    cursor: pointer;
+    
+}
+
+.loginbtn:hover {
+    font-weight: 900;
+    cursor: pointer; 
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(100, 244, 100);
+    width: 100%;
+    padding: 12px;
+}
+.songbtns{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }

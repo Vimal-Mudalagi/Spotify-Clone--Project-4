@@ -44,3 +44,28 @@ body {
 .p1 {
     padding: 10px;
 }
+
+/* Styles for Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #555;
+  }
+  
+  /* Styles for Firefox */
+  scrollbar-color: #333 #555;
+  
+  /* Styles for Internet Explorer */
+  -ms-overflow-style: none;
+  scrollbar-base-color: #555;
+  
+  /* Styles for Edge */
+  scrollbar-color: #333 #555;
+  
