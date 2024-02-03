@@ -162,11 +162,17 @@
     position: absolute;
     bottom: 0;
     background-color: rgb(100, 244, 100);
-    width: 100%;
+    width: 90%;
     padding: 12px;
 }
 .songbtns{
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+.songlist ul{
+    padding: 0 45px;
+}
+.songlist ul li{
+    list-style-type: decimal;
 }
