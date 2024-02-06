@@ -26,7 +26,7 @@ async function main() {
     let songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
 
     for (const song of songs) {
-        songUL.innerHTML = songUL.innerHTML + song;
+        songUL.innerHTML = songUL.innerHTML + `<li> ${song} </li>`;
     }
 
     var audio = new Audio(songs[0]);
