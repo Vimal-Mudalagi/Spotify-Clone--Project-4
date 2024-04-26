@@ -38,14 +38,14 @@ async function getSongs(folder) {
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
     songUL.innerHTML = ""
     for (const song of songs) {
-        songUL.innerHTML = songUL.innerHTML + `<li><img class="invert" width="34" src="img/music.svg" alt="">
+        songUL.innerHTML = songUL.innerHTML + `<li><img class="invert" width="34" src="images/music.svg" alt="">
                             <div class="info">
                                 <div> ${song.replaceAll("%20", " ")}</div>
                                 <div>Harry</div>
                             </div>
                             <div class="playnow">
                                 <span>Play Now</span>
-                                <img class="invert" src="img/play.svg" alt="">
+                                <img class="invert" src="images/play.svg" alt="">
                             </div> </li>`;
     }
 
@@ -64,7 +64,7 @@ const playMusic = (track, pause = false) => {
     currentSong.src = `/${currFolder}/` + track
     if (!pause) {
         currentSong.play()
-        play.src = "img/pause.svg"
+        play.src = "images/pause.svg"
     }
     document.querySelector(".songinfo").innerHTML = decodeURI(track)
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
@@ -128,11 +128,11 @@ async function main() {
     play.addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play()
-            play.src = "img/pause.svg"
+            play.src = "images/pause.svg"
         }
         else {
             currentSong.pause()
-            play.src = "img/play.svg"
+            play.src = "images/play.svg"
         }
     })
 
@@ -179,6 +179,7 @@ async function main() {
             playMusic(songs[index + 1])
         }
     })
+
 
     // Add an event to volume
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
